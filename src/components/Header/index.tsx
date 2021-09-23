@@ -5,10 +5,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-
   menuButton: {
     marginRight: theme.spacing(1),
   },
@@ -54,9 +50,9 @@ function Header() {
   const classes = useStyles();
   return (
     // Панель навигации
-    <AppBar position="fixed">
+    <AppBar position="relative">
       {/* базовый элемент всех макетов, центрирует элементы по горизонтали */}
-      <Container fixed>
+      <Container>
         {/* в toolbar кладутся иконки, логотипы, кнопки для адаптивного меню */}
         <Toolbar>
           <MenuIcon />
