@@ -11,8 +11,9 @@ const useStales = makeStyles((theme) => ({
 
 interface InputForTableProps {
   addData: (value: number) => void;
+  test1: string[];
 }
-
+// React.PropsWithChildren это тоже самое что React.FC
 function InputforTable(props: React.PropsWithChildren<InputForTableProps>) {
   const styles = useStales();
   const [value, setValue] = useState("");

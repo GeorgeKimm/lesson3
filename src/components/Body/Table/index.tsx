@@ -46,7 +46,7 @@ function Table() {
           ))}
         </tbody>
       </table>
-      <InputforTable addData={addData} />
+      <InputforTable test1={["1", "2"]} addData={addData} />
     </div>
   );
 }
